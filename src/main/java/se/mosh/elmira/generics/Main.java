@@ -20,6 +20,7 @@ public class Main {
 
          */
 
+       /*
        var user1 = new User(10);
        var user2 = new User(20);
        if(user1.compareTo(user2) < 0)
@@ -28,5 +29,14 @@ public class Main {
            System.out.println("user1 == user2");
        else
            System.out.println("user1 > user2");
+
+        */
+
+        var max = Utils.max(1, 3);
+        System.out.println(max);
+
+
+        var max2 = Utils.max(new User(10), new User(20));
+        System.out.println(max2);
     }
 }
