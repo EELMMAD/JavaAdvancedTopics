@@ -55,6 +55,6 @@ public class Main {
 
         var instructors = new GenericList<Instructor>();
         var users = new GenericList<User>();
-        Utils.printUser(users);
+        Utils.printUser(new GenericList<User>());
     }
 }
