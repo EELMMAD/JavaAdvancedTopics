@@ -19,6 +19,25 @@ public class GenericList<T> implements Iterable<T>{   //T type of object we want
 
     @Override
     public Iterator<T> iterator() {   //rerun type is Iterator object
-        return null;
+        return new ListIterator(this);    //this is current object, the object that knows how to iterate over generic list
+    }
+
+    private class ListIterator implements Iterator<T>{
+        private GenericList<T> list;
+        private int index;
+
+        public ListIterator(GenericList<T> list){
+            this.list = list;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return (index < list.count);
+        }
+
+        @Override
+        public T next() {
+            return list.items[index++];
+        }
     }
 }
