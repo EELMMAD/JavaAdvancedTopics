@@ -3,8 +3,10 @@ package se.mosh.elmira.generics;
 //T --> type or template  (type parameter for this class)
 //E --> element (implement a class act as a collection)
 
-public class GenericList<T> {   //T type of object we want to store here
-    private T[] items = (T[]) new Object[10]; //cast the result to T Array.
+import java.util.Iterator;
+
+public class GenericList<T> implements Iterable<T>{   //T type of object we want to store here
+    public T[] items = (T[]) new Object[10]; //cast the result to T Array.
     private int count;
 
     public void add(T item){
@@ -13,5 +15,10 @@ public class GenericList<T> {   //T type of object we want to store here
 
     public T get(int index){
         return items[index];
+    }
+
+    @Override
+    public Iterator<T> iterator() {   //rerun type is Iterator object
+        return null;
     }
 }
