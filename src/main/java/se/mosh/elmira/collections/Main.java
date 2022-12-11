@@ -11,6 +11,8 @@ public class Main {
          */
 
 
-        CollectionsDemo.show();
+       // CollectionsDemo.show();
+
+        ListDemo.show();
 }
 }
