@@ -15,9 +15,9 @@ public class Main {
          */
 
 
-       // CollectionsDemo.show();
+        // CollectionsDemo.show();
 
-       // ListDemo.show();
+        // ListDemo.show();
 
         /*
         List<Customer> customers = new ArrayList<>();
@@ -30,8 +30,10 @@ public class Main {
 
          */
 
-       // QueueDemo.show();
+        //QueueDemo.show();
 
-        SetDemo.show();
-}
+        //SetDemo.show();
+
+        MapDemo.show();
+    }
 }
