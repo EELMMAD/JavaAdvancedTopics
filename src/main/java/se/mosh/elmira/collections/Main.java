@@ -19,6 +19,7 @@ public class Main {
 
        // ListDemo.show();
 
+        /*
         List<Customer> customers = new ArrayList<>();
         customers.add(new Customer("a", "e3"));
         customers.add(new Customer("b", "e2"));
@@ -26,5 +27,8 @@ public class Main {
        // Collections.sort(customers); //[a, b, c]
         Collections.sort(customers, new EmailComparator());  //[c, b, a]
         System.out.println(customers);
+
+         */
+        QueueDemo.show();
 }
 }
